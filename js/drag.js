@@ -45,11 +45,17 @@ function init() {
   if(blnJuegoFinalizado){
     iTiempoTranscurrido = 0
     if(iTiempoLimite>5) iTiempoLimite = iTiempoLimite-5;
+    else goal=true;
     blnJuegoFinalizado = false;
   }
   
-  $.fntTiempo();
+  if(goal) end();
+  else $.fntTiempo();
 
+}
+
+function end() {
+  location.reload();
 }
 
 function handleCardDrop( event, ui ) {
@@ -93,6 +99,7 @@ function handleCardDrop( event, ui ) {
 
 var iTiempoLimite = 30, iTiempoTranscurrido = 0;
 var blnJuegoFinalizado = false;
+var goal = false;
 
 $.fntTiempo=function(){
     if(!blnJuegoFinalizado){
