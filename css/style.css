@@ -55,7 +55,7 @@ p {
 }
 
 #cardSlots, #cardPile {
-    width: 1150px;
+    width: 1130px;
     height: 120px;
     padding: 20px;
     border: 2px solid #333;
@@ -99,7 +99,7 @@ p {
 }
 
 #cardPile div {
-    background: #666;
+    background: #ff66ff;
     color: #fff;
     font-size: 50px;
     text-shadow: 0 0 3px #000;

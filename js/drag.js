@@ -24,7 +24,7 @@ function init() {
 
   for ( var i=0; i<10; i++ ) {
 
-    $('<div>' + '<img src="media/'+numbers[i].split("_")[1]+'.jpg" width="80" height="80"/>' + '</div>').data( 'number', numbers[i].split("_")[0] ).attr( 'id', 'card'+numbers[i].split("_")[0] ).appendTo( '#cardPile' ).draggable( {
+    $('<div>' + '<img src="media/'+numbers[i].split("_")[1]+'.png" width="80" height="80"/>' + '</div>').data( 'number', numbers[i].split("_")[0] ).attr( 'id', 'card'+numbers[i].split("_")[0] ).appendTo( '#cardPile' ).draggable( {
       containment: '#content',
       stack: '#cardPile div',
       cursor: 'move',
@@ -33,7 +33,7 @@ function init() {
   }
 
   // Create the card slots
-  var words = [ 'resistencia', 'inductor', 'capacitor', 'transistor-NPN', 'transistor-PNP', 'diodo', 'optoacoplador', 'MOSFET', 'transformador', 'fuente' ];
+  var words = [ 'resistencia', 'inductor', 'capacitor', 'transistor-NPN', 'transistor-PNP', 'diodo', 'opto-acoplador', 'MOSFET', 'trans-formador', 'fuente' ];
   for ( var i=1; i<=10; i++ ) {
     $('<div>' + words[i-1] + '</div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
       accept: '#cardPile div',
