@@ -19,12 +19,13 @@ function init() {
   $('#cardSlots').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = ['1_resistencia', '2_inductor', '3_capacitor', '4_transistor-NPN', '5_transistor-PNP', '6_diodo', '7_optoacoplador', '8_MOSFET', '9_transformador', '10_fuente' ];
+  var numbers = ['1_resistencia', '2_inductor', '3_capacitor', '4_transistor-NPN', '5_transistor-PNP', '6_diodo', '7_opto-acoplador', '8_MOSFET', '9_trans-formador', '10_fuente' ];
   numbers.sort( function() { return Math.random() - .5 } );
+  var vixen = numbers.slice(0,5);
 
-  for ( var i=0; i<10; i++ ) {
+  for ( var i=0; i<5; i++ ) {
 
-    $('<div>' + '<img src="media/'+numbers[i].split("_")[1]+'.png" width="80" height="80"/>' + '</div>').data( 'number', numbers[i].split("_")[0] ).attr( 'id', 'card'+numbers[i].split("_")[0] ).appendTo( '#cardPile' ).draggable( {
+    $('<div>' + '<img src="media/'+vixen[i].split("_")[1]+'.png" width="80" height="80"/>' + '</div>').data( 'number', vixen[i].split("_")[0] ).attr( 'id', 'card'+vixen[i].split("_")[0] ).appendTo( '#cardPile' ).draggable( {
       containment: '#content',
       stack: '#cardPile div',
       cursor: 'move',
@@ -33,9 +34,10 @@ function init() {
   }
 
   // Create the card slots
+  vixen.sort(function() {return Math.random() - .5});
   var words = [ 'resistencia', 'inductor', 'capacitor', 'transistor-NPN', 'transistor-PNP', 'diodo', 'opto-acoplador', 'MOSFET', 'trans-formador', 'fuente' ];
-  for ( var i=1; i<=10; i++ ) {
-    $('<div>' + words[i-1] + '</div>').data( 'number', i ).appendTo( '#cardSlots' ).droppable( {
+  for ( var i=0; i<5; i++ ) {
+    $('<div>' + vixen[i].split("_")[1] + '</div>').data( 'number', vixen[i].split("_")[0] ).appendTo( '#cardSlots' ).droppable( {
       accept: '#cardPile div',
       hoverClass: 'hovered',
       drop: handleCardDrop
@@ -79,7 +81,7 @@ function handleCardDrop( event, ui ) {
   // If all the cards have been placed correctly then display a message
   // and reset the cards for another go
 
-  if ( correctCards == 10 ) {
+  if ( correctCards == 5 ) {
     $('#successMessage').show();
     $('#successMessage').animate( {
       left: '380px',
