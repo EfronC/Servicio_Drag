@@ -1,10 +1,16 @@
 
 var correctCards = 0;
+
 $( init );
+
+var obj;
+
+
 
 function init() {
 
   // Hide the success message
+  document.getElementById("texta").style.backgroundColor='white';
   $('#successMessage').hide();
   $('#successMessage').css( {
     left: '580px',
@@ -19,7 +25,8 @@ function init() {
   $('#cardSlots').html( '' );
 
   // Create the pile of shuffled cards
-  var numbers = ['1_resistencia', '2_inductor', '3_capacitor', '4_transistor-NPN', '5_transistor-PNP', '6_diodo', '7_opto-acoplador', '8_MOSFET', '9_trans-formador', '10_fuente' ];
+  //Si se cambia el nombre al dispositivo aqu[i, hay que cambiarlo tambien en el json
+  var numbers = ['1_resistencia', '2_inductor', '3_capacitor', '4_transistor', '5_and', '6_diodo', '7_opto-acoplador', '8_MOSFET', '9_trans-formador', '10_fuente', '11_not', '12_nand', '13_nor', '14_or', '15_xor' ];
   numbers.sort( function() { return Math.random() - .5 } );
   var vixen = numbers.slice(0,5);
 
@@ -35,7 +42,7 @@ function init() {
 
   // Create the card slots
   vixen.sort(function() {return Math.random() - .5});
-  var words = [ 'resistencia', 'inductor', 'capacitor', 'transistor-NPN', 'transistor-PNP', 'diodo', 'opto-acoplador', 'MOSFET', 'trans-formador', 'fuente' ];
+  //var words = [ 'resistencia', 'inductor', 'capacitor', 'transistor-NPN', 'transistor-PNP', 'diodo', 'opto-acoplador', 'MOSFET', 'trans-formador', 'fuente' ];
   for ( var i=0; i<5; i++ ) {
     $('<div>' + vixen[i].split("_")[1] + '</div>').data( 'number', vixen[i].split("_")[0] ).appendTo( '#cardSlots' ).droppable( {
       accept: '#cardPile div',
@@ -43,6 +50,19 @@ function init() {
       drop: handleCardDrop
     } );
   }
+
+  // Create texts
+  vixen.sort(function() {return Math.random() - .5});
+  var a = 0;
+  obj = vixen;
+
+  $.getJSON("xml/desc.json", function(json) {
+   for ( var i=0; i<json.length; i++ ) {
+    if(vixen[a].split("_")[1] == json[i].names){$('#texta').val(json[i].desc).data( 'number', vixen[a].split("_")[0] );} 
+  }
+ });
+
+
 
   if(blnJuegoFinalizado){
     iTiempoTranscurrido = 0
@@ -63,19 +83,21 @@ function end() {
 function handleCardDrop( event, ui ) {
   var slotNumber = $(this).data( 'number' );
   var cardNumber = ui.draggable.data( 'number' );
+  var textNumber = $('#texta').data('number');
 
   // If the card was dropped to the correct slot,
   // change the card colour, position it directly
   // on top of the slot, and prevent it being dragged
   // again
 
-  if ( slotNumber == cardNumber ) {
+  if ( (slotNumber == cardNumber)&&(slotNumber == textNumber) ) {
     ui.draggable.addClass( 'correct' );
     ui.draggable.draggable( 'disable' );
     $(this).droppable( 'disable' );
     ui.draggable.position( { of: $(this), my: 'left top', at: 'left top' } );
     ui.draggable.draggable( 'option', 'revert', false );
     correctCards++;
+    document.getElementById("texta").style.backgroundColor='#66ff66';
   } 
   
   // If all the cards have been placed correctly then display a message
@@ -118,3 +140,33 @@ $.fntTiempo=function(){
       }
     }
   };
+
+  var a = 0;
+
+  function regresa() //this will apply to all anchor tags
+  { 
+    var vixen = obj;
+    $.getJSON("xml/desc.json", function(json) {
+      if(a==0) {a = 4;}
+      else {a = a-1;}
+      for ( var i=0; i<json.length; i++ ) {
+        if(vixen[a].split("_")[1] == json[i].names) $('#texta').val(json[i].desc).data( 'number', vixen[a].split("_")[0] );
+      }
+      if($('#card'+$('#texta').data('number')).hasClass('correct')) document.getElementById("texta").style.backgroundColor='#66ff66'; 
+      else document.getElementById("texta").style.backgroundColor='white';
+    });
+  }
+
+  function avanza() //this will apply to all anchor tags
+  { 
+    var vixen = obj;
+    $.getJSON("xml/desc.json", function(json) {
+      if(a==4) {a = 0;}
+      else {a = a+1;}
+      for ( var i=0; i<json.length; i++ ) {
+        if(vixen[a].split("_")[1] == json[i].names) $('#texta').val(json[i].desc).data( 'number', vixen[a].split("_")[0] );
+      }
+      if($('#card'+$('#texta').data('number')).hasClass('correct')) document.getElementById("texta").style.backgroundColor='#66ff66'; 
+      else document.getElementById("texta").style.backgroundColor='white';
+    });
+  }

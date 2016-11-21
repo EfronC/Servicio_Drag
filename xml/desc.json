@@ -1,0 +1,62 @@
+[
+	{
+		"names":"resistencia",
+		"desc":"Componente electrónico diseñado para introducir una resistencia eléctrica determinada entre dos puntos de un circuito eléctrico."
+	},
+	{
+		"names":"capacitor",
+		"desc":"Dispositivo pasivo, utilizado en electricidad y electrónica, capaz de almacenar energía sustentando un campo eléctrico."
+	},
+	{
+		"names":"inductor",
+		"desc":"Componente pasivo de un circuito eléctrico que, debido al fenómeno de la autoinducción, almacena energía en forma de campo magnético."
+	},
+	{
+		"names":"transistor",
+		"desc":"Dispositivo electrónico semiconductor utilizado para entregar una señal de salida en respuesta a una señal de entrada."
+	},
+	{
+		"names":"and",
+		"desc":"Dispositivo electrónico que realiza la función booleana de producto lógico."
+	},
+	{
+		"names":"diodo",
+		"desc":"Componente electrónico de dos terminales que permite la circulación de la corriente eléctrica a través de él en un solo sentido."
+	},
+	{
+		"names":"opto-acoplador",
+		"desc":"Dispositivo de emisión y recepción que funciona como un interruptor activado mediante la luz emitida por un diodo LED que satura un componente optoelectrónico."
+	},
+	{
+		"names":"MOSFET",
+		"desc":"Transistor utilizado para amplificar o conmutar señales electrónicas."
+	},
+	{
+		"names":"trans-formador",
+		"desc":"Dispositivo eléctrico que permite aumentar o disminuir la tensión en un circuito eléctrico de corriente alterna, manteniendo la potencia."
+	},
+	{
+		"names":"fuente",
+		"desc":"Elemento activo que es capaz de generar una diferencia de potencial entre sus bordes o proporcionar una corriente eléctrica para que otros circuitos funcionen."
+	},
+	{
+		"names":"not",
+		"desc":"Puerta lógica digital que implementa la disyunción lógica negada."
+	},
+	{
+		"names":"nand",
+		"desc":"Puerta lógica que realiza la operación de producto lógico negado."
+	},
+	{
+		"names":"nor",
+		"desc":"Puerta lógica que realiza la operación de suma lógica negada."
+	},
+	{
+		"names":"or",
+		"desc":"Puerta lógica digital que implementa la disyunción lógica."
+	},
+	{
+		"names":"xor",
+		"desc":"Puerta lógica digital que implementa el o exclusivo."
+	}
+]
