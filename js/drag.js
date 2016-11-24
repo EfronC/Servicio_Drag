@@ -4,6 +4,7 @@ var correctCards = 0;
 $( init );
 
 var obj;
+var tam = 0;
 
 
 
@@ -29,6 +30,7 @@ function init() {
   var numbers = ['1_resistencia', '2_inductor', '3_capacitor', '4_transistor', '5_and', '6_diodo', '7_opto-acoplador', '8_MOSFET', '9_trans-formador', '10_fuente', '11_not', '12_nand', '13_nor', '14_or', '15_xor' ];
   numbers.sort( function() { return Math.random() - .5 } );
   var vixen = numbers.slice(0,5);
+
 
   for ( var i=0; i<5; i++ ) {
 
@@ -134,7 +136,7 @@ $.fntTiempo=function(){
         //volvemos a llamar a esta funcion un segundo despues
         setTimeout('$.fntTiempo()',1000);
         //mostrar el estado del juego
-        $('#data').find('p').html('<strong>Tiempo restante: </strong>'+(iTiempoLimite-iTiempoTranscurrido)+' segundos');
+        $('#data').find('b').html('<strong>Tiempo restante: </strong>'+(iTiempoLimite-iTiempoTranscurrido)+' segundos');
         //aumentamos el contador de tiempo transcurido
         iTiempoTranscurrido++;
       }
