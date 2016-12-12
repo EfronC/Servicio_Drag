@@ -60,7 +60,7 @@ function init() {
 
   $.getJSON("xml/desc.json", function(json) {
    for ( var i=0; i<json.length; i++ ) {
-    if(vixen[a].split("_")[1] == json[i].names){$('#texta').val(json[i].desc).data( 'number', vixen[a].split("_")[0] );} 
+    if(vixen[a].split("_")[1] == json[i].names){$('#texta').text(json[i].desc).data( 'number', vixen[a].split("_")[0] );} 
   }
  });
 
@@ -131,7 +131,7 @@ $.fntTiempo=function(){
     if(!blnJuegoFinalizado){
       if(iTiempoTranscurrido>=iTiempoLimite){
         //finalizar el juego por tiempo
-        location.reload();
+        //location.reload();
       }else{
         //volvemos a llamar a esta funcion un segundo despues
         setTimeout('$.fntTiempo()',1000);
@@ -152,7 +152,7 @@ $.fntTiempo=function(){
       if(a==0) {a = 4;}
       else {a = a-1;}
       for ( var i=0; i<json.length; i++ ) {
-        if(vixen[a].split("_")[1] == json[i].names) $('#texta').val(json[i].desc).data( 'number', vixen[a].split("_")[0] );
+        if(vixen[a].split("_")[1] == json[i].names) $('#texta').text(json[i].desc).data( 'number', vixen[a].split("_")[0] );
       }
       if($('#card'+$('#texta').data('number')).hasClass('correct')) document.getElementById("texta").style.backgroundColor='#66ff66'; 
       else document.getElementById("texta").style.backgroundColor='white';
@@ -166,7 +166,7 @@ $.fntTiempo=function(){
       if(a==4) {a = 0;}
       else {a = a+1;}
       for ( var i=0; i<json.length; i++ ) {
-        if(vixen[a].split("_")[1] == json[i].names) $('#texta').val(json[i].desc).data( 'number', vixen[a].split("_")[0] );
+        if(vixen[a].split("_")[1] == json[i].names) $('#texta').text(json[i].desc).data( 'number', vixen[a].split("_")[0] );
       }
       if($('#card'+$('#texta').data('number')).hasClass('correct')) document.getElementById("texta").style.backgroundColor='#66ff66'; 
       else document.getElementById("texta").style.backgroundColor='white';

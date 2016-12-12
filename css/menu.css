@@ -1,0 +1,89 @@
+.sidebar {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.64);
+    position: fixed;
+    color: white;
+    padding: 30px;
+    padding-top: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #222;
+    top: 0;
+    bottom: 0;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+.menu {
+    background-color: #555;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.menu > div>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    cursor: auto;
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+.menu >  div>a:hover {
+    background-color: #222;
+    text-decoration: none;
+}
+
+.menu > div {
+    margin-top: 15%;
+}
+
+@media (min-width: 992px) {
+    .sidebar {
+        width: 12%;
+    }
+
+    .menu {
+        margin-left: 12%;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 16%;
+    }
+
+    .menu {
+        margin-left: 16%;
+    }
+}
+
+/*  Instrucciones   */
+.wideBox {
+    width: 90%;
+    padding: 10px;
+    overflow: auto;
+    /*outline: black solid;*/
+    max-height: 400px;
+    text-align: justify;
+    color: white;
+    background-color: #444;
+    box-shadow: 5px 5px 2px #000;
+    font-size: 15px;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #000000;
+    display: none;
+}

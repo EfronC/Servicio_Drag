@@ -1,0 +1,7 @@
+<ol>
+	<li>Verificar que el simbolo conincida con el nombre y la descripcion.</li>
+	<li>Desplazar el simbolo hasta la casilla del nombre.</li>
+	<li>Si te marca correcto, darle a la flecha para cambiar la descripcion.</li><br>
+
+</ol>
+Nota: Se puede cambiar la descripcion sin haberla acertado antes.

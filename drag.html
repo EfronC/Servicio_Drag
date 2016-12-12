@@ -14,6 +14,7 @@
 <body>
 
 <header>
+  <audio autoplay="autoplay" loop="loop" width="300" height="32" ><source src="media/scifi.mp3" type="audio/mp3"></source></audio>
 	<center><h1>Reto Electrónica</h1>
 		<div id="data">
   			<b></b>
@@ -27,9 +28,9 @@
   <div id="cardSlots"> </div>
 
   <div id="desc">
-    <a href="#" class="izquierda_flecha"><img src="media/flecha_01.png" onclick="regresa();" /></a>
-    <textarea id="texta" rows="7" cols="100" readonly=""></textarea>
-    <a href="#" class="derecha_flecha"><img src="media/flecha_02.png" onclick="avanza();" /></a>
+    <a href="#" class="izquierda_flecha" id="izquierda" onclick="regresa();"><img src="media/flecha_01.png"  /></a>
+    <div class="wideBox" id="texta"></div>
+    <a href="#" class="derecha_flecha" id="derecha" onclick="avanza();"><img src="media/flecha_02.png"  /></a>
   </div>
 
 
