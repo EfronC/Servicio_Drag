@@ -2,6 +2,26 @@ function esconder(){
 	$("#instrucciones").slideToggle();
 }
 
+function inicio() {
+	var jsonhttp = new XMLHttpRequest(), url="xml/index.xml";
+
+	jsonhttp.onreadystatechange = function() {
+		if (jsonhttp.readyState == 4 && jsonhttp.status == 200) {
+			var jsonDoc = jsonhttp.responseText;
+			rellenar(jsonDoc);
+		}
+	};
+
+	jsonhttp.open("GET",url,true);
+	jsonhttp.send();
+
+	function rellenar(arr) {
+		
+		document.getElementById("prin").innerHTML = arr;
+		
+	}
+}
+
 function abrir(data, ins){
 	var jsonhttp = new XMLHttpRequest(), url="";
 	url = data;

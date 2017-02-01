@@ -131,7 +131,7 @@ $.fntTiempo=function(){
     if(!blnJuegoFinalizado){
       if(iTiempoTranscurrido>=iTiempoLimite){
         //finalizar el juego por tiempo
-        //location.reload();
+        location.reload();
       }else{
         //volvemos a llamar a esta funcion un segundo despues
         setTimeout('$.fntTiempo()',1000);

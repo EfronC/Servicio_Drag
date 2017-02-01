@@ -1,0 +1,12 @@
+		<audio autoplay="autoplay" loop="loop" width="300" height="32" ><source src="media/dance.mp3" type="audio/mp3"></source></audio>
+		<div id="comandos">
+			
+				<a href="mantenimiento.html">Juego</a>
+			
+				<a id="ins" href="javascript:void(0);" onclick="esconder()">Instrucciones</a>
+			
+		</div>
+
+		<center><div id="instrucciones" class="wideBox">
+			
+		</div></center>

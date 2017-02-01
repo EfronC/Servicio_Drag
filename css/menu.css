@@ -13,6 +13,11 @@
     overflow: auto;
 }
 
+.sidebar #brand {
+    text-decoration: none;
+    color: red;
+}
+
 /* Let's get this party started */
 ::-webkit-scrollbar {
     width: 12px;
@@ -43,15 +48,24 @@
 }
 
 .menu {
-    background-color: #555;
+    /*background-color: #339933;*/
     position: fixed;
     bottom: 0;
     top: 0;
     right: 0;
     left: 0;
-    color: white;
+    color: #ff7700;
+    color: ;
     text-align: center;
     font-size: 2em;
+    background: rgba(0,128,0,1);
+    background: -moz-linear-gradient(top, rgba(0,128,0,1) 0%, rgba(121,155,95,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,128,0,1)), color-stop(100%, rgba(121,155,95,1)));
+    background: -webkit-linear-gradient(top, rgba(0,128,0,1) 0%, rgba(121,155,95,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,128,0,1) 0%, rgba(121,155,95,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,128,0,1) 0%, rgba(121,155,95,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,128,0,1) 0%, rgba(121,155,95,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008000', endColorstr='#799b5f', GradientType=0 );
 }
 
 .menu > div>a {
@@ -59,7 +73,7 @@
     display: block;
     padding: 10px 15px;
     cursor: auto;
-    color: #FFF;
+    color: #ffcc00;
     text-decoration: none;
 }
 
