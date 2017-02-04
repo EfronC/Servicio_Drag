@@ -1,12 +1,19 @@
 body {
-	background-color: darkred;
 	color: white;
+	background: #F2F5FE url("../media/fondo.gif") repeat-x 0 0;
 }
 
 header {
-	margin: 5px 5px 5px 5px;
-	outline: 1px solid;
+	margin: 0 0 5px 0;
+	/*outline: 1px solid;*/
 	padding: 50px; 
+	background-image: url(../media/nubes.png);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 40s linear infinite;
+	color: black;
+	font-family: 'Cracked', fantasy;
+	font-style: bold;
 }
 
 header h1 {
@@ -14,18 +21,67 @@ header h1 {
 }
 
 #objeto {
-	border: 1px solid;
-	margin: 5px 0 5px 0;
+	/*border: 1px solid;*/
+	margin: 5px 0 0 0;
 	padding: 10% 0;
 	overflow: hidden;
 }
 
 #contenido {
-	border: 1px solid;
-	margin: 5px 0 5px 0;
-	padding: 10% 0;
+	/*border: 1px solid;*/
+	margin: 5px 0 0 0;
+	padding: 10% 5%;
 }
 
 #objeto img {
-	border: 3px solid green;
+	border: 3px solid white;
 }
+
+#izquierda {
+	float: left;
+	padding-top: 14px;
+}
+
+#derecha {
+	float: right;
+	padding-top: 14px;
+}
+
+.wideBox {
+    clear: both;
+    text-align: center;
+    width: 90%;
+    min-height: 50px;
+    margin: 0 5px;
+    padding: 10px;
+    background: #ffcc99;
+    border: 1px solid #333;
+    display: inline-block;
+    color: black;
+
+    border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	box-shadow: 5px 5px 2px #000;
+}
+
+/*	Animar fondo*/
+
+	@keyframes animatedBackground {
+		from { background-position: 0 0; }
+		to { background-position: 100% 0; }
+	}
+
+	@-webkit-keyframes animatedBackground {
+		from { background-position: 0 0; }
+		to { background-position: 100% 0; }
+	}
+	@-ms-keyframes animatedBackground {
+		from { background-position: 0 0; }
+		to { background-position: 100% 0; }
+	}
+	@-moz-keyframes animatedBackground {
+		from { background-position: 0 0; }
+		to { background-position: 100% 0; }
+	}
