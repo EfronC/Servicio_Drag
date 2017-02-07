@@ -23,7 +23,7 @@ header h1 {
 #objeto {
 	/*border: 1px solid;*/
 	margin: 5px 0 0 0;
-	padding: 10% 0;
+	padding: 10% 10%;
 	overflow: hidden;
 }
 
@@ -33,7 +33,7 @@ header h1 {
 	padding: 10% 5%;
 }
 
-#objeto img {
+#objeto #imagen {
 	border: 3px solid white;
 }
 
@@ -45,6 +45,10 @@ header h1 {
 #derecha {
 	float: right;
 	padding-top: 14px;
+}
+
+#objspace {
+	display: inline-block;
 }
 
 .wideBox {
@@ -64,6 +68,10 @@ header h1 {
 	-webkit-border-radius: 10px 10px 10px 10px;
 	border: 0px solid #000000;
 	box-shadow: 5px 5px 2px #000;
+}
+
+#izquierda-img {
+	height: 100%;
 }
 
 /*	Animar fondo*/

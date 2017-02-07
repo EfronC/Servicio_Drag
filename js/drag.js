@@ -62,7 +62,7 @@ function init() {
    for ( var i=0; i<json.length; i++ ) {
     if(vixen[a].split("_")[1] == json[i].names){$('#texta').text(json[i].desc).data( 'number', vixen[a].split("_")[0] );} 
   }
- });
+});
 
 
 
@@ -121,13 +121,13 @@ function handleCardDrop( event, ui ) {
 
 /*
   Tiempo
-*/
+  */
 
-var iTiempoLimite = 30, iTiempoTranscurrido = 0;
-var blnJuegoFinalizado = false;
-var goal = false;
+  var iTiempoLimite = 30, iTiempoTranscurrido = 0;
+  var blnJuegoFinalizado = false;
+  var goal = false;
 
-$.fntTiempo=function(){
+  $.fntTiempo=function(){
     if(!blnJuegoFinalizado){
       if(iTiempoTranscurrido>=iTiempoLimite){
         //finalizar el juego por tiempo

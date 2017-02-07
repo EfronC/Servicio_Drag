@@ -1,0 +1,266 @@
+[
+	{
+		"names":"Alcohol Isopropílico",
+		"desc":"Es el líquido que remueve la grasa con gran facilidad, por lo cual ejerce una gran seguridad a la introduccion",
+		"im":"Alcohol_Isopropilico_opt.png",
+		"iden":1
+	},
+	{
+		"names":"Batería",
+		"desc":"Es el encargado de entregarle energía continua a la placa madre para que almacene la información de los BIOS y sea guardada en la memoria RAM CMOS",
+		"im":"Bateria_opt.png",
+		"iden":2
+	},
+	{
+		"names":"Cable de Corriente",
+		"desc":"Su utilidad es conectar la fuente de poder a la red eléctrica",
+		"im":"Cable_Corriente_opt.png",
+		"iden":3
+	},
+	{
+		"names":"Conector Ethernet",
+		"desc":"Tipo de cable utilizado habitualmente para interconectar todos los dispositivos que conforman una LAN",
+		"im":"Conector_Ethernet_opt.png",
+		"iden":4
+	},
+	{
+		"names":"Conector IDE",
+		"desc":"Tipo de cable utilizado para conectar a dispositivos con interfaz IDE",
+		"im":"Conector_IDE_opt.png",
+		"iden":5
+	},
+	{
+		"names":"Conector PS/2",
+		"desc":"Tipo de cable utilizado para conectar a dispositivos con interfaz PS/2",
+		"im":"Conector_PS2_opt.png",
+		"iden":6
+	},
+	{
+		"names":"Conector SATA",
+		"desc":"Tipo de cable utilizado para conectar a dispositivos con interfaz SATA",
+		"im":"Conector_SATA_opt.png",
+		"iden":7
+	},
+	{
+		"names":"Conector USB",
+		"desc":"Tipo de cable utilizado para conectar a dispositivos con interfaz USB",
+		"im":"Conector_USB_opt.png",
+		"iden":8
+	},
+	{
+		"names":"Conector VGA",
+		"desc":"Tipo de cable utilizado para conectar a dispositivos con interfaz VGA",
+		"im":"Conector_VGA_opt.png",
+		"iden":9
+	},
+	{
+		"names":"Cooler",
+		"desc":"Este elemento se encarga de mantener la temperatura del equipo en el estado ideal, con el objetivo de que el extremo calor que se produce en los ordenadores no acabe con la estabilidad de los mismos",
+		"im":"Cooler_opt.png",
+		"iden":10
+	},
+	{
+		"names":"Desarmador Estrella",
+		"desc":"Son aquellos que tienen la punta en forma de cruz y son de mayor profundidad en el centro que en los extremos",
+		"im":"Desarmador_Estrella_opt.png",
+		"iden":11
+	},
+	{
+		"names":"Desarmador Plano",
+		"desc":"Son aquellos que tienen la punta aplanada",
+		"im":"Desarmador_Plano_opt.png",
+		"iden":12
+	},
+	{
+		"names":"Desarmador Torx",
+		"desc":"Son aquellos que tienen la punta en forma de estrella de 6 puntas",
+		"im":"Desarmador_Torx_opt.png",
+		"iden":13
+	},
+	{
+		"names":"Espuma limpiadora",
+		"desc":"Espuma sin alcohol para la limpieza de superficies de plástico y de metal en computadores y equipo de oficina",
+		"im":"Espuma_Limpiadora_opt.png",
+		"iden":14
+	},
+	{
+		"names":"Fuente de Poder",
+		"desc":"Dispositivo que convierte la corriente alterna, en una o varias corrientes continuas, que alimentan los distintos circuitos del aparato electrónico al que se conecta",
+		"im":"Fuente_de_Poder_opt.png",
+		"iden":15
+	},
+	{
+		"names":"GPU",
+		"desc":"Coprocesador dedicado al procesamiento de gráficos u operaciones de coma flotante",
+		"im":"GPU_opt.png",
+		"iden":16
+	},
+	{
+		"names":"HDD",
+		"desc":"Dispositivo de almacenamiento de datos que emplea un sistema de grabación magnética para almacenar archivos digitales",
+		"im":"HDD_opt.png",
+		"iden":17
+	},
+	{
+		"names":"Líquido Dieléctrico",
+		"desc":"Es utilizado para la limpieza y desengrase en frío en todo tipo de máquinas ya que éste posee bajo grado de inflamabilidad y posee una baja conductividad eléctrica",
+		"im":"Liquido_Dielectrico_opt.png",
+		"iden":18
+	},
+	{
+		"names":"Monitor",
+		"desc":"Principal dispositivo de salida que muestra datos o información al usuario.",
+		"im":"Monitor_opt.png",
+		"iden":19
+	},
+	{
+		"names":"Motherboard",
+		"desc":"Tarjeta de circuito impreso a la que se conectan los componentes que constituyen la computadora.",
+		"im":"Motherboard_opt.png",
+		"iden":20
+	},
+	{
+		"names":"Mouse",
+		"desc":"Dispositivo apuntador utilizado para facilitar el manejo de un entorno gráfico en una computadora",
+		"im":"Mouse_opt.png",
+		"iden":21
+	},
+	{
+		"names":"Pinza",
+		"desc":"Instrumento para sujetar o comprimir cosas",
+		"im":"Pinza_opt.png",
+		"iden":22
+	},
+	{
+		"names":"Puerto Ethernet",
+		"desc":"Pequeña ranura cuadrada que se encuentra en la parte posterior de la mayoría de las computadoras, y sirve para conectar a una LAN",
+		"im":"Puerto_Ethernet_opt.png",
+		"iden":23
+	},
+	{
+		"names":"Puerto HDMI",
+		"desc":"Es un puerto de forma especial con 19 ó 29 terminales, capaz de transmitir de manera simultánea videos de alta definición, así como varios canales de audio y otros datos de apoyo",
+		"im":"Puerto_HDMI_opt.png",
+		"iden":24
+	},
+	{
+		"names":"Puerto IDE",
+		"desc":"Ranura rectangular obsoleta que nació debido a una necesidad imperiosa de poder conectar componentes de distintos fabricantes en un mismo ordenador",
+		"im":"Puerto_IDE_opt.png",
+		"iden":25
+	},
+	{
+		"names":"Puerto Paralelo",
+		"desc":"Interfaz entre un computador y un periférico, cuya principal característica es que los bits de datos viajan juntos, enviando un paquete de byte a la vez",
+		"im":"Puerto_Paralelo_opt.png",
+		"iden":26
+	},
+	{
+		"names":"Puerto PCI",
+		"desc":"Bus estándar de computadoras para conectar dispositivos periféricos directamente a la placa base",
+		"im":"Puerto_PCI_opt.png",
+		"iden":27
+	},
+	{
+		"names":"Puerto PS/2",
+		"desc":"Interfaz empleada para conectar teclados y ratones",
+		"im":"Puerto_PS2_opt.png",
+		"iden":28
+	},
+	{
+		"names":"Puerto SATA",
+		"desc":"Interfaz de transferencia de datos entre la placa base y algunos dispositivos de almacenamiento, aceptada y estandarizada en las placas base de las computadoras personales",
+		"im":"Puerto_SATA_opt.png",
+		"iden":29
+	},
+	{
+		"names":"Puerto Serial",
+		"desc":"Interfaz de comunicaciones de datos digitales, frecuentemente utilizado por computadoras y periféricos, donde la información es transmitida bit a bit, enviando un solo bit a la vez",
+		"im":"Puerto_Serial_opt.png",
+		"iden":30
+	},
+	{
+		"names":"Puerto Sonido",
+		"desc":"Permite conectar dispositivos de audio a la computadora bajo control de un programa informativo. Tiene la función de capturar audio procedente del exterior, grabar señales de audio, reproducir sonidos hacia bocinas y capturar la señal del micrófono",
+		"im":"Puerto_Sonido_opt.png",
+		"iden":31
+	},
+	{
+		"names":"Puerto USB",
+		"desc":"Se  utiliza para  conectar hasta 127 dispositivos, está diseñado para transmitir energía eléctrica al dispositivo que se encuentra conectado",
+		"im":"Puerto_USB_opt.png",
+		"iden":32
+	},
+	{
+		"names":"Puerto VGA",
+		"desc":"Se encarga de enviar las señales desde la computadora hacia la pantalla con soportes de 256 a 16,7 millones de colores y resoluciones",
+		"im":"Puerto_VGA_opt.png",
+		"iden":33
+	},
+	{
+		"names":"Radiador",
+		"desc":"Se conoce por radiador al dispositivo que permite intercambiar calor entre dos medios, siendo uno de ellos, el aire ambiente",
+		"im":"Radiador_opt.png",
+		"iden":34
+	},
+	{
+		"names":"RAM DDR1",
+		"desc":"Tipo de memorias DRAM, las cuáles tienen los chips de memoria en ambos lados de la tarjeta y cuentan con un conector especial de 184 terminales para ranuras de la tarjeta madre",
+		"im":"RAM_DDR1_opt.png",
+		"iden":35
+	},
+	{
+		"names":"RAM DDR2",
+		"desc":"Tipo de memorias DRAM, las cuáles tienen los chips de memoria en ambos lados de la tarjeta y cuentan con un conector especial de 240 terminales para ranuras de la tarjeta principal",
+		"im":"RAM_DDR2_opt.png",
+		"iden":36
+	},
+	{
+		"names":"Slot de Batería",
+		"desc":"Ranura localizada en la tarjeta madre para el asentamiento de la pila",
+		"im":"Slot_Bateria_opt.png",
+		"iden":37
+	},
+	{
+		"names":"Slot de RAM",
+		"desc":"Ranura localizada en la tarjeta madre para la instalación de memorias RAM",
+		"im":"Slot_RAM_opt.png",
+		"iden":38
+	},
+	{
+		"names":"Slot de Vídeo",
+		"desc":"Ranura lozalizada en la tarjeta madre para la instalación de una tarjeta de vídeo externa",
+		"im":"Slot_Video_opt.png",
+		"iden":39
+	},
+	{
+		"names":"Socket",
+		"desc":"Zócalo electrónico instalado en la tarjeta madre, que se usa para fijar y conectar el microprocesador, sin soldarlo lo cual permite ser extraído después",
+		"im":"Socket_opt.png",
+		"iden":40
+	},
+	{
+		"names":"Tarjeta de Red",
+		"desc":"Componente de hardware que conecta una computadora a una red informática y que posibilita compartir recursos entre dos o más computadoras, es decir, en una red de computadoras",
+		"im":"Tarjeta_Red_opt.png",
+		"iden":41
+	},
+	{
+		"names":"Tarjeta de Vídeo",
+		"desc":"Tiene a su cargo el procesamiento de los datos que provienen del procesador principal y convertirlos en información que se pueda representar en dispositivos tales como los monitores y los televisores",
+		"im":"Tarjeta_Video_opt.png",
+		"iden":42
+	},
+	{
+		"names":"Teclado",
+		"desc":"Dispositivo o periférico de entrada que utiliza una disposición de botones o teclas, para que actúen como palancas mecánicas o interruptores electrónicos que envían información a la computadora.",
+		"im":"Teclado_opt.png",
+		"iden":43
+	},
+	{
+		"names":"Unidad de CD",
+		"desc":"Es una unidad que usa un laser u ondas electromagnéticas cercanas al espectro visible de luz como parte del proceso de leer o escribir datos en unidades ópticas",
+		"im":"Unidad_CD_opt.png",
+		"iden":44
+	}
+]
