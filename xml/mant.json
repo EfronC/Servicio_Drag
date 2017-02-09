@@ -199,7 +199,7 @@
 	},
 	{
 		"names":"Radiador",
-		"desc":"Se conoce por radiador al dispositivo que permite intercambiar calor entre dos medios, siendo uno de ellos, el aire ambiente",
+		"desc":"Dispositivo que permite intercambiar calor entre dos medios, siendo uno de ellos, el aire ambiente",
 		"im":"Radiador_opt.png",
 		"iden":34
 	},
