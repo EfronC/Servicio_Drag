@@ -5,7 +5,7 @@ var ima;
 var desc;
 var nomb;
 var total = 44;
-var diff = 10;
+var diff = 5;
 
 var im_a = 0;
 var desc_a = 0;
@@ -14,6 +14,9 @@ var name_a = 0;
 var punto = 0;
 
 var correct = [];
+
+var gud = new Audio("media/cartoon015.wav");
+var bad = new Audio("media/cartoon048.wav");
 
 Array.prototype.contains = function(obj) {
     var i = this.length;
@@ -36,6 +39,10 @@ function init() {
     width: 0,
     height: 0
   } );
+
+  $('#descripcion').css("background", "#fc9");
+  $('#nombre').css("background", "#fc9");
+  $('#imagen').css("border", "3px solid white");
 
   // Create images
   //Si se cambia el nombre al dispositivo aqu[i, hay que cambiarlo tambien en el json
@@ -78,6 +85,7 @@ function init() {
 
 }
 
+//  Verificar el resultado
 function checar() {
   var idname = $('#nombre center h4').data('number').number;
   var iddesc = $('#descripcion center h4').data('number').number;
@@ -85,6 +93,8 @@ function checar() {
 
   if ( (idname == iddesc)&&(idname == idim) ) {
     if($('#imagen').data('number').enable){
+      gud.currentTime = 0;
+      gud.play();
       $('#imagen').css("border", "3px solid #6f6");
       $('#nombre').css("background", "#6f6");
       $('#descripcion').css("background", "#6f6");
@@ -93,14 +103,32 @@ function checar() {
       $('#imagen').data('number').enable = false;
       correct.push($('#imagen').data('number').number);
 
-      if (correct.length == diff) {alert('Terminado');}
+      if (correct.length == diff) {
+        correct.length = 0;
+        if (diff<44) {diff+=1;}
+        else {$('#nlevel').prop("disabled",true);}
+        $('#final h2').text('Puntuacion: ¡'+punto+'!');
+        $('#successMessage').show();
+        $('#successMessage').animate( {
+          left: '380px',
+          top: '200px',
+          width: '210px',
+          height: '250px',
+          opacity: 1
+        } );
+        blnJuegoFinalizado = true;
+      }
     }
   } else {
+    bad.currentTime=0;
+    bad.play();
     punto -= 50;
     $('#puntos').text(punto);
   }
 }
 
+
+//  Funciones para cambiar los datos de las secciones
 function regresa_desc() //this will apply to all anchor tags
 { 
   var vixen = desc;

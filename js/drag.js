@@ -6,6 +6,9 @@ $( init );
 var obj;
 var tam = 0;
 
+var gud = new Audio("media/cartoon015.wav");
+var bad = new Audio("media/cartoon048.wav");
+
 
 
 function init() {
@@ -93,6 +96,8 @@ function handleCardDrop( event, ui ) {
   // again
 
   if ( (slotNumber == cardNumber)&&(slotNumber == textNumber) ) {
+    gud.currentTime = 0;
+    gud.play();
     ui.draggable.addClass( 'correct' );
     ui.draggable.draggable( 'disable' );
     $(this).droppable( 'disable' );
@@ -100,7 +105,10 @@ function handleCardDrop( event, ui ) {
     ui.draggable.draggable( 'option', 'revert', false );
     correctCards++;
     document.getElementById("texta").style.backgroundColor='#66ff66';
-  } 
+  } else {
+    bad.currentTime=0;
+    bad.play();
+  }
   
   // If all the cards have been placed correctly then display a message
   // and reset the cards for another go
