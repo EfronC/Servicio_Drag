@@ -5,7 +5,7 @@ var ima;
 var desc;
 var nomb;
 var total = 44;
-var diff = 5;
+var diff = 10;
 
 var im_a = 0;
 var desc_a = 0;
@@ -105,7 +105,7 @@ function regresa_desc() //this will apply to all anchor tags
 { 
   var vixen = desc;
   $.getJSON("xml/mant.json", function(json) {
-    if(desc_a==0) {desc_a = 4;}
+    if(desc_a==0) {desc_a = (diff-1);}
     else {desc_a = desc_a-1;}
     for ( var i=0; i<json.length; i++ ) {
       if(vixen[desc_a] == json[i].iden) {
@@ -128,7 +128,7 @@ function regresa_desc() //this will apply to all anchor tags
   { 
     var vixen = desc;
     $.getJSON("xml/mant.json", function(json) {
-      if(desc_a==4) {desc_a = 0;}
+      if(desc_a==(diff-1)) {desc_a = 0;}
       else {desc_a = desc_a+1;}
       for ( var i=0; i<json.length; i++ ) {
         if(vixen[desc_a] == json[i].iden) {
@@ -151,7 +151,7 @@ function regresa_desc() //this will apply to all anchor tags
   { 
     var vixen = nomb;
     $.getJSON("xml/mant.json", function(json) {
-      if(name_a==0) {name_a = 4;}
+      if(name_a==0) {name_a = (diff-1);}
       else {name_a = name_a-1;}
       for ( var i=0; i<json.length; i++ ) {
         if(vixen[name_a] == json[i].iden) {
@@ -174,7 +174,7 @@ function regresa_desc() //this will apply to all anchor tags
   { 
     var vixen = nomb;
     $.getJSON("xml/mant.json", function(json) {
-      if(name_a==4) {name_a = 0;}
+      if(name_a==(diff-1)) {name_a = 0;}
       else {name_a = name_a+1;}
       for ( var i=0; i<json.length; i++ ) {
         if(vixen[name_a] == json[i].iden) {
@@ -197,7 +197,7 @@ function regresa_desc() //this will apply to all anchor tags
   { 
     var vixen = ima;
     $.getJSON("xml/mant.json", function(json) {
-      if(im_a==0) {im_a = 4;}
+      if(im_a==0) {im_a = (diff-1);}
       else {im_a = im_a-1;}
       for ( var i=0; i<json.length; i++ ) {
         if(vixen[im_a] == json[i].iden){
@@ -220,7 +220,7 @@ function regresa_desc() //this will apply to all anchor tags
   { 
     var vixen = ima;
     $.getJSON("xml/mant.json", function(json) {
-      if(im_a==4) {im_a = 0;}
+      if(im_a==(diff-1)) {im_a = 0;}
       else {im_a = im_a+1;}
       for ( var i=0; i<json.length; i++ ) {
         if(vixen[im_a] == json[i].iden){
