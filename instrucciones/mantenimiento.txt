@@ -1,7 +1,8 @@
 <ol>
-	<li>Verificar que el simbolo conincida con el nombre y la descripcion.</li>
-	<li>Desplazar el simbolo hasta la casilla del nombre.</li>
-	<li>Si te marca correcto, darle a la flecha para cambiar la descripcion.</li><br>
+	<li>Verificar que la imagen coincida con el nombre y la descripción.</li>
+	<li>Darle al botón de checar para verificar si hace match.</li>
+	<li>Si te marca correcto, se te sumarán 100 puntos.</li>
+	<li>Si fallas se te restarán 50 puntos</li>
+	<li>Cuando hayas terminado de hacer los match, se te dara la opción de pasar al siguiente nivel donde se agregara un match extra</li><br>
 
 </ol>
-Nota: Se puede cambiar la descripcion sin haberla acertado antes.
