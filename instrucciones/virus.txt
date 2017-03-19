@@ -1,0 +1,9 @@
+<ol>
+	<li>Presionar una letra para probar si existe en la palabra.</li>
+	<li>Si existe esta se muestra en su posición.</li>
+	<li>Si no existe el dibujo del ahorcado avanzará.</li>
+	<li>Leer la descripción para tener una pista de que palabra es.</li>
+	<li>Si logras adivinar la palabra, dale a jugar para volver a empezar.</li>
+	<li>Si te rindes con la palabra, también puedes darle a jugar para volver a empezar</li><br>
+
+</ol>
