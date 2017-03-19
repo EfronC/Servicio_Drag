@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/virus.css">
+    <script type="text/javascript" src="js/virus.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            fondoDegradado();
+            /*set interval para que cambie cada x milisegundos*/
+            setInterval(fondoDegradado, 5000);
+            init();
+        });
+    </script>
+    <title></title>
+</head>
+<body>
+    <header>
+        <center><h1>El Ahorcado</h1></center>
+        <audio autoplay="autoplay" loop="loop" width="300" height="32" ><source src="media/happyrock.mp3" type="audio/mp3"></source></audio>
+    </header>
+    <div class="fondoJQuery"></div>
+    <div class="fondoJQuery oculto"></div>
+    <div id="wrapper">
+        <canvas id="ahorcado" width="600" height="600"></canvas>
+        <div id="tablero">
+            <div id="palabra"></div>
+            <div id="play" onclick="selecciona();" >Jugar</div>
+            <!--<div id="debug"></div>-->
+            <center>
+            <div id="Teclado">
+                <input type="button" name="bot" value="A" id="A" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="B" id="B" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="C" id="C" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="D" id="D" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="E" id="E" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="F" id="F" class="letesp let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="G" id="G" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="H" id="H" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="I" id="I" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="J" id="J" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="K" id="K" class="letesp let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="L" id="L" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="M" id="M" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="N" id="N" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="O" id="O" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="P" id="P" class="let letesp" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="Q" id="Q" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="R" id="R" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="S" id="S" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="T" id="T" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="U" id="U" class="letesp let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="V" id="V" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="W" id="W" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="X" id="X" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="Y" id="Y" class="let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+                <input type="button" name="bot" value="Z" id="Z" class="letesp let" onclick="comprobarLetra(this.value); desactiva_enlace(this);">
+            </div>
+            </center><br>
+            <center>
+                <div id="namespace">
+                    <a href="#" class="izquierda_flecha" id="izquierda" onclick="regresa_name();"><img src="media/flecha_01.png"  /></a>
+                    <div id="nombre" class="wideBox"><center><h4></h4></center></div>
+                    <a href="#" class="derecha_flecha" id="derecha" onclick="avanza_name();"><img src="media/flecha_02.png"  /></a>
+                </div>
+            </center>
+        </div>
+
+        <div id="successMessage" class="success">
+        <h2>Eureka!</h2>
+    </div>
+    </div>
+
+</body>
+</html>
+

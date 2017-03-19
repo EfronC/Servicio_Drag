@@ -1,0 +1,52 @@
+[
+	{
+		"names":"RECICLER",
+		"desc":"Consiste en crear un acceso directo de un programa y eliminar su aplicación original.",
+		"iden":1
+	},
+	{
+		"names":"TROYANO",
+		"desc":"Consiste en robar información o alterar el sistema del hardware o en un caso extremo permite que un usuario externo pueda controlar el equipo.",
+		"iden":2
+	},
+	{
+		"names":"TIMEBOMB",
+		"desc":"Son programas que se activan al producirse un acontecimiento determinado.",
+		"iden":3
+	},
+	{
+		"names":"WORM",
+		"desc":"Tiene la propiedad de duplicarse asi mismo.",
+		"iden":4
+	},
+	{
+		"names":"HOAX",
+		"desc":"Son mensajes de contenido falso que incitan al usuario a hacer copias y enviarla a sus contactos.",
+		"iden":5
+	},
+	{
+		"names":"JOKE",
+		"desc":"Aplicaciones con la característica de alterar la interfaz de forma no intrusiva para molestar al usuario.",
+		"iden":6
+	},
+	{
+		"names":"RESIDENTE",
+		"desc":"Se ocultan en la memoria RAM de forma permanente, de forma que pueden controlar e interceptar todas las operaciones llevadas a cabo por el sistema operativo",
+		"iden":7
+	},
+	{
+		"names":"ACCIONDIRECTA",
+		"desc":"Su objetivo prioritario es reproducirse y actuar en el mismo momento de ser ejecutados.",
+		"iden":8
+	},
+	{
+		"names":"BOTKILL",
+		"desc":"Actúan infectando en primer lugar el sector de arranque de los dispositivos de almacenamiento.",
+		"iden":9
+	},
+	{
+		"names":"CIFRADOS",
+		"desc":"Estos virus se cifran a sí mismos para no ser detectados por los programas antivirus.",
+		"iden":10
+	}
+]

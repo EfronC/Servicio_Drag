@@ -1,6 +1,5 @@
 $( init );
 
-var obj;
 var ima;
 var desc;
 var nomb;

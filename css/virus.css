@@ -1,0 +1,267 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    margin: 0;
+    /*outline: 1px solid;*/
+    padding: 50px; 
+    background-image: url(../media/virus.jpg);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 40s linear infinite;
+    color: red;
+    font-family: 'Cracked', fantasy;
+    font-style: bold;
+}
+
+.fondoJQuery {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -moz-transition: opacity 5s;
+    -o-transition: opacity 5s;
+    -webkit-transition: opacity 5s;
+    transition: opacity 5s;
+    -moz-box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+    -webkit-box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+    box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+}
+
+.oculto {
+    opacity: 0;
+}
+
+#wrapper {
+    padding-top: 20px;
+    position: relative;
+    margin: 0 auto;
+    width: 1250px;
+    height: auto;
+}
+
+#ahorcado {
+    float: left;
+    background: radial-gradient(at center, #a43baa,#000000);
+    margin: 5px;
+    border: solid 1px #00ff21;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+    -webkit-box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+    box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+}
+/*#debug{
+  position:relative;
+  margin: 0 auto;
+  border: 3px lime;
+  top:50px;
+  width:400px;
+  height:auto;
+  background-color:lime;
+  text-align:center;
+}*/
+#tablero {
+    float: left;
+    margin: 5px auto;
+    padding-top: 20px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(at center, #a43baa,#000000);
+    border: solid 1px #00ff21;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+    -webkit-box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+    box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+}
+
+    #tablero h1 {
+        text-align: center;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        color: #00ff21;
+    }
+
+#palabra {
+    background: radial-gradient(at center top, #a963ad,#000000);
+    height: 35px;
+    width: 500px;
+    color: #00ff21;
+    margin: 0 auto;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+    -webkit-box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+    box-shadow: 1px 0 200px rgba(0, 0, 0, .7) inset;
+}
+
+    #palabra div {
+        border: 2px solid #00ff21;
+        width: 25px;
+        height: 25px;
+        float: left;
+        margin: 5px;
+        text-align: center;
+        vertical-align: center;
+        /*background: beige;*/
+        font-size: 15px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+/*.letra {
+    margin: 0 5px;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    display: inline-block;
+}*/
+
+#Teclado {
+    /*position: absolute;*/
+    margin: 20px 0 0 0;
+    width: 250px;
+    height: 300px;
+    top: 150px;
+    left: 785px;
+}
+
+#play {
+    font-family: impact;
+    font-size: 16pt;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    height: 40px;
+    width: 250px;
+    color: #45484d;
+    background-color: #00ff21;
+    margin-top: 10px;
+    padding-top: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+    #play:hover {
+
+        background-color: #a43baa;
+        color:#00ff21;
+        cursor: pointer;
+        -moz-box-shadow: 1px 0 50px rgba(0, 0, 0, .7) inset;
+        -webkit-box-shadow: 1px 0 50px rgba(0, 0, 0, .7) inset;
+        box-shadow: 1px 0 50px rgba(0, 0, 0, .7) inset;
+    }
+.let {
+    padding: 5px;
+    margin: 2.5px;
+    width: 45px;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    color: #45484d;
+    background-color: #00ff21;
+    font-family: impact;
+    font-size: 16pt;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+    .let:hover {
+        background-color: #a43baa;
+        color:#00ff21;
+        cursor: pointer;
+        -moz-box-shadow: 1px 0 15px rgba(0, 0, 0, .7) inset;
+        -webkit-box-shadow: 1px 0 15px rgba(0, 0, 0, .7) inset;
+        box-shadow: 1px 0 15px rgba(0, 0, 0, .7) inset;
+    }
+.letesp {
+    clear: left;
+}
+
+.let:disabled {
+    background-color: #000;
+}
+
+/*  Animar fondo*/
+
+    @keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 100% 0; }
+    }
+
+    @-webkit-keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 100% 0; }
+    }
+    @-ms-keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 100% 0; }
+    }
+    @-moz-keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 100% 0; }
+    }
+
+.wideBox {
+    clear: both;
+    text-align: center;
+    width: 90%;
+    min-height: 50px;
+    margin: 0 5px;
+    padding: 10px;
+    background: #ffcc99;
+    border: 1px solid #333;
+    display: inline-block;
+    color: black;
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #000000;
+    box-shadow: 5px 5px 2px #000;
+}
+
+#izquierda {
+    float: left;
+    padding-top: 14px;
+}
+
+#derecha {
+    float: right;
+    padding-top: 14px;
+}
+
+#namespace {
+    padding: 0 30px;
+}
+
+#successMessage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    color: black;
+    background: #dfd;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    padding: 20px;
+}
