@@ -3,13 +3,12 @@ body {
     margin: 0;
     height: 100%;
     position: relative;
-    overflow: hidden;
 }
 
 header {
     margin: 0;
     /*outline: 1px solid;*/
-    padding: 50px; 
+    padding: 20px; 
     background-image: url(../media/virus.jpg);
     background-position: 0px 0px;
     background-repeat: repeat-x;
@@ -256,6 +255,25 @@ header {
     z-index: 100;
     color: black;
     background: #dfd;
+    border: 2px solid #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+    padding: 20px;
+}
+
+#failMessage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    color: black;
+    background: #900;
     border: 2px solid #333;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;

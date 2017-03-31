@@ -20,33 +20,33 @@
 		"iden":4
 	},
 	{
-		"names":"HOAX",
-		"desc":"Son mensajes de contenido falso que incitan al usuario a hacer copias y enviarla a sus contactos.",
+		"names":"SEQUIN",
+		"desc":"Coloca su programa principal al final del HOST, con un salto al mismo desde el inicio.",
 		"iden":5
-	},
-	{
-		"names":"JOKE",
-		"desc":"Aplicaciones con la característica de alterar la interfaz de forma no intrusiva para molestar al usuario.",
-		"iden":6
 	},
 	{
 		"names":"RESIDENTE",
 		"desc":"Se ocultan en la memoria RAM de forma permanente, de forma que pueden controlar e interceptar todas las operaciones llevadas a cabo por el sistema operativo",
+		"iden":6
+	},
+	{
+		"names":"JUSTIN",
+		"desc":"Virus que añade su código al inicio de un archivo COM infectado",
 		"iden":7
 	},
 	{
-		"names":"ACCIONDIRECTA",
-		"desc":"Su objetivo prioritario es reproducirse y actuar en el mismo momento de ser ejecutados.",
+		"names":"COMPANION",
+		"desc":"Virus que renombra programas con nombres no estandarizados, y usa los originales para si mismo.",
 		"iden":8
 	},
 	{
-		"names":"BOTKILL",
-		"desc":"Actúan infectando en primer lugar el sector de arranque de los dispositivos de almacenamiento.",
+		"names":"OVERWRITING",
+		"desc":"Virus que sobreescriben una porción de código de un programa con su propio código.",
 		"iden":9
 	},
 	{
-		"names":"CIFRADOS",
-		"desc":"Estos virus se cifran a sí mismos para no ser detectados por los programas antivirus.",
+		"names":"COM INFECTOR",
+		"desc":"Virus sin estructuras de datos que consisten solo de código, y afecta solamente archivos COM.",
 		"iden":10
 	}
 ]

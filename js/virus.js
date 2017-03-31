@@ -51,6 +51,14 @@ function selecciona() {
         width: 0,
         height: 0
       } );
+
+      $('#failMessage').hide();
+      $('#failMessage').css( {
+        left: '581px',
+        top: '250px',
+        width: 0,
+        height: 0
+      } );
       activa_todo();
       contador = 0;
       contaexiste = 0;
@@ -166,6 +174,14 @@ function comprobarLetra(letra) {
                 //alert("Has perdido");
                 bad.currentTime=0;
                 bad.play();
+                $('#failMessage').show();
+                $('#failMessage').animate( {
+                  left: '380px',
+                  top: '200px',
+                  width: '210px',
+                  height: '250px',
+                  opacity: 1
+                } );
                 desactiva_todo();
                 break;
                 /*Cabeza*/
